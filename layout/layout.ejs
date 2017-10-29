@@ -1,0 +1,17 @@
+<%- partial('_partial/head') %>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <%- partial('_partial/leftside', null, {cache: !config.relative_link}) %>
+        <div class="shade"></div>
+      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+      <div id="outer" class="outer-body">
+          <section id="main" class="main">
+              <%- body %>
+          </section>
+      </div>
+      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    </div>
+  </div>
+</body>
+</html>

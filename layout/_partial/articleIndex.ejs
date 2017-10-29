@@ -1,0 +1,34 @@
+<article id="<%= post.layout %>-<%= post.slug %>" class="articleIndex articleIndex-type-<%= post.layout %>" itemscope itemprop="blogPost">
+  <div class="articleIndex-meta">
+      <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+  </div>
+  <header class="articleIndex-header">
+      <%- partial('post/title', {class_name: 'article-title'}) %>
+  </header>
+
+  <div class="articleIndex-inner">
+
+    <div class="articleIndex-entry" itemprop="articleBody">
+      <% if (post.excerpt && index){ %>
+        <%- post.excerpt %>
+        <% if (theme.excerpt_link){ %>
+          <p class="articleIndex-more-link">
+            <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+          </p>
+        <% } %>
+      <% } else { %>
+        <%- post.content %>
+      <% } %>
+    </div>
+    <footer class="articleIndex-footer">
+      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="articleIndex-share-link"><%= __('share') %></a>
+      <% if (post.comments && config.disqus_shortname){ %>
+        <a href="<%- post.permalink %>#disqus_thread" class="articleIndex-comment-link"><%= __('comment') %></a>
+      <% } %>
+      <%- partial('post/tag') %>
+    </footer>
+  </div>
+  <% if (!index){ %>
+    <!--<%- partial('post/nav') %>-->
+  <% } %>
+</article>

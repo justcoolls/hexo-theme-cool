@@ -1,0 +1,19 @@
+<header id="header" class="header">
+  <div class="navbar">
+    <div class="navbar-li"></div>
+    <div class="navbar-li"></div>
+    <div class="navbar-li"></div>
+  </div>
+  <div id="header-outer" class="header-outer">
+    <div id="header-title" class="header-title">
+      <h1 id="logo-wrap">
+        <%= config.subtitle %>
+      </h1>
+    </div>
+  </div>
+  <nav class="main-nav">
+      <% for (var i in theme.menu){ %>
+    <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+      <% } %>
+  </nav>
+</header>

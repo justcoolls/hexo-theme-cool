@@ -1,0 +1,27 @@
+<div id="leftside" class="leftside">
+  <div class="leftside-h"></div>
+  <div id="leftside-outer" class="leftside-outer">
+    <div id="leftside-title" class="leftside-title">
+      <img class="myAvatar" src="<%= theme.avatar %>"/>
+      <h1 id="logo-author">
+        <%= config.author %>
+      </h1>
+      <% if (theme.description){ %>
+        <p><%= theme.description %></p>
+      <% } %>
+    </div>
+  </div>
+  <div id="leftside-inner" class="inner">
+    <nav id="sub-nav">
+        <% if (theme.subnav){ %>
+          <% for (var i in theme.subnav){ %>
+      <a class="sub-nav-link" href="<%- url_for(theme.subnav[i]) %>">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-<%= i %>"></use>
+            </svg>
+      </a>
+          <% } %>
+        <% } %>
+    </nav>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="rowMatter">
+    <div class="indexBody">
+        <%- partial('_partial/archive', {pagination: 2, index: true}) %>
+    </div>
+    <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
+        <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+    <% } %>
+</div>

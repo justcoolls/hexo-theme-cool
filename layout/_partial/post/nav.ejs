@@ -1,0 +1,30 @@
+<% if (post.prev || post.next){ %>
+<nav id="article-nav">
+  <% if (post.prev){ %>
+    <a href="<%- url_for(post.prev.path) %>" id="article-nav-last" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><%= __('LAST') %></strong>
+      <div class="article-nav-title">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-fanhui"></use>
+        </svg>
+        <% if (post.prev.title){ %>
+          <%= post.prev.title %>
+        <% } else { %>
+          (no title)
+        <% } %>
+      </div>
+    </a>
+  <% } %>
+  <% if (post.next){ %>
+    <a href="<%- url_for(post.next.path) %>" id="article-nav-next" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><%= __('NEXT') %></strong>
+
+      <div class="article-nav-title"><%= post.next.title %>
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-gengduo"></use>
+        </svg>
+      </div>
+    </a>
+  <% } %>
+</nav>
+<% } %>
