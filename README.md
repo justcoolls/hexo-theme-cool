@@ -68,10 +68,10 @@ fb_app_id:
 # 配置根目录下_config.yml
 ```bash
 # Site
-title: JustCool的博客
-subtitle: just do it
-description: 代码洁癖 喜欢折腾
-author: JustCool
+title: JustCool的博客 #页面tittle
+subtitle: just do it # 主页头信息
+description: 代码洁癖 喜欢折腾 #个人描述
+author: JustCool #作者
 language:
 timezone:
 ```
