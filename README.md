@@ -4,7 +4,7 @@ cool是一个简洁美观的hexo主题，上手简单适合快速建立个人博
 # 使用方法
 $ git clone https://github.com/justcoolls/hexo-theme-cool.git  themes/cool
 
-# 配置
+# 配置 themes下_config.yml
 根据需要选择配置需要展示的社交账号，头像等
 ```bash
 # Header
@@ -64,4 +64,14 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+```
+# 配置根目录下_config.yml
+```bash
+# Site
+title: JustCool的博客
+subtitle: just do it
+description: 代码洁癖 喜欢折腾
+author: JustCool
+language:
+timezone:
 ```
