@@ -38,6 +38,19 @@ a:link,a:hover,a:visited,a:active {   text-decoration: none;  }
   height: 168px;
   background-color: #797979
 }
+.leftside-h b{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 4px;
+  top: 4px;
+  cursor: pointer;
+  color: #eee;
+}
+.leftside-h b:hover{
+  color: #9dcff3;
+}
+
 #leftside-outer{
   text-align: center;
   margin-top: -59px;
