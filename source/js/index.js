@@ -13,8 +13,8 @@ $(window).load(function(){
 		})
 		$('.shade').show();
     });
-    $(".shade").click(function(){
-        $(this).hide();
+    $(".shade, .leftside-h b").click(function(){
+        $(".shade").hide();
         $('.leftside').css({
             "transform": "translateX(-100%)",
             "-ms-transform":"translateX(-100%)",
