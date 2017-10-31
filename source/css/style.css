@@ -422,7 +422,7 @@ a:link,a:hover,a:visited,a:active {   text-decoration: none;  }
 }
 .article-entry code{
   font-family: Tahoma;
-  color: #96220b;
+  color: #9a162d;
 }
 .article-entry .highlight{
   background: #232323;
@@ -436,6 +436,15 @@ a:link,a:hover,a:visited,a:active {   text-decoration: none;  }
 .matterBody .code .line{
   color: #fff;
   font-family: Tahoma;
+}
+.matterBody .code .line .string{
+  color: #0ccc51;
+}
+.matterBody .code .line .keyword{
+  color: #ef2855;
+}
+.matterBody .code .line .built_in{
+  color: #56c2ec;
 }
 .matterBody img{
   width: 100%;
