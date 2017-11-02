@@ -318,6 +318,7 @@ a:link,a:hover,a:visited,a:active {   text-decoration: none;  }
 /*卡片内容*/
 .articleIndex-entry{
   /*height: 90px;*/
+  width: 100%;
   overflow: hidden;
   font-size: 12px;
   color: gray;
@@ -325,11 +326,25 @@ a:link,a:hover,a:visited,a:active {   text-decoration: none;  }
   border-top: solid 1px #eee;
   border-bottom: solid 1px #eee;
 }
-.articleIndex-entry *:not(h3){
+.articleIndex-entry *{
   display: none;
 }
 .articleIndex-entry h3{
+  display: block;
+}
+.articleIndex-entry blockquote{
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+.articleIndex-entry blockquote p{
+  display: block;
+}
+.articleIndex-entry h3{
   margin: 6px 0;
+}
+.articleIndex-entry blockquote p{
+  font-size: 15px;
 }
   /*卡片标签*/
 .articleIndex-footer .articleIndex-share-link{
@@ -420,9 +435,16 @@ a:link,a:hover,a:visited,a:active {   text-decoration: none;  }
   padding: 5px 20px;
   margin: 20px 0;
 }
+.article-entry>table{
+  margin: auto;
+  min-width: 360px;
+}
 .article-entry code{
   font-family: Tahoma;
-  color: #9a162d;
+  color: #2180a5;
+  background: #eee;
+  padding: 0px 6px;
+  border-radius: 6px;
 }
 .article-entry .highlight{
   background: #232323;
@@ -433,9 +455,14 @@ a:link,a:hover,a:visited,a:active {   text-decoration: none;  }
   font-size: 13px;
   color: #b5acac;
 }
+.matterBody .gutter .line{
+  height: 18px;
+  font-family: Tahoma;
+}
 .matterBody .code .line{
   color: #fff;
   font-family: Tahoma;
+  height: 18px;
 }
 .matterBody .code .line .string{
   color: #0ccc51;
@@ -447,7 +474,9 @@ a:link,a:hover,a:visited,a:active {   text-decoration: none;  }
   color: #56c2ec;
 }
 .matterBody img{
-  width: 100%;
+  /*width: 100%;*/
+  margin: auto;
+  display: block;
 }
 
 .article-footer{
@@ -711,6 +740,16 @@ a:link,a:hover,a:visited,a:active {   text-decoration: none;  }
     width: 100%;
     margin-top: 0;
     border-radius: 0;
+  }
+  .matterBody img{
+    width: 100%;
+  }
+  .matterBody .article-entry>blockquote{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .matterBody .article-entry>table{
+    min-width: 0;
   }
   .archives-body {
     width: 100%;
