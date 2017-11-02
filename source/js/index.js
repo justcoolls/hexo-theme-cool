@@ -50,6 +50,13 @@ $(window).load(function(){
         $(this).css("background-color","#eee");
         $(this).children("a").css("color","#808080");
 	});
+//	title
+    var matterBodys=$("#main").children("div").attr("class");
+    if(matterBodys=="matterBody"){
+        console.log("true")
+        var mytitle=$(".article-title").text().trim()||$("title").text();
+        $("title").text(mytitle);
+    }
 
 //share
     var share_url = encodeURIComponent(location.href);
