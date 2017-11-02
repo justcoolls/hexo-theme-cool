@@ -59,7 +59,7 @@ avatar: /img/avatar.jpg
 
 # Miscellaneous
 google_analytics:
-favicon: /favicon.png
+favicon:  /img/favicon.png
 twitter:
 google_plus:
 fb_admins:
