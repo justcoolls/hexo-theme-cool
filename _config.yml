@@ -5,22 +5,22 @@ menu:
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  zhihu: "#"
-  qq: "#"
-  weixin: "#"
-  jianshu: "#"
-  renren: "#"
-  douban: "#"
-  bilibili: "#"
-  acfun: "#"
-  mail: "#"
-  facebook: "#"
-  google: "#"
-  twitter: "#"
-  linkedin: "#"
-  rss: "#"
+  github: "https://github.com/justcoolls"
+#  weibo: "#"
+#  zhihu: "#"
+#  qq: "#"
+#  weixin: "#"
+  jianshu: "http://www.jianshu.com/u/1dc0382931a0"
+#  renren: "#"
+#  douban: "#"
+#  bilibili: "#"
+#  acfun: "#"
+#  mail: "#"
+#  facebook: "#"
+#  google: "#"
+#  twitter: "#"
+#  linkedin: "#"
+#  rss: "#"
 
 # Content
 excerpt_link: Read More
@@ -50,7 +50,7 @@ avatar: /img/avatar.jpg
 
 # Miscellaneous
 google_analytics:
-favicon: /favicon.png
+favicon: /img/favicon.png
 twitter:
 google_plus:
 fb_admins:
