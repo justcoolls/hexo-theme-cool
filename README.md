@@ -76,4 +76,4 @@ language:
 timezone:
 ```
 # 主页卡片展示
-主页卡片会展示文章中h3 和 <blockquote>标签 中的内容
+主页卡片会展示文章中h3 和 `<blockquote>`标签 中的内容
