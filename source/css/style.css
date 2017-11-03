@@ -332,6 +332,9 @@ a:link,a:hover,a:visited,a:active {   text-decoration: none;  }
 .articleIndex-entry h3{
   display: block;
 }
+.articleIndex-entry h1{
+  display: block;
+}
 .articleIndex-entry blockquote{
   display: block;
   margin-left: 0;
@@ -434,6 +437,9 @@ a:link,a:hover,a:visited,a:active {   text-decoration: none;  }
   border-radius: 10px;
   padding: 5px 20px;
   margin: 20px 0;
+}
+.article-entry>h1{
+  border-bottom: solid 1px #b5acac;
 }
 .article-entry>table{
   margin: auto;
