@@ -443,7 +443,16 @@ a:link,a:hover,a:visited,a:active {   text-decoration: none;  }
 }
 .article-entry>table{
   margin: auto;
-  min-width: 360px;
+  min-width: 440px;
+  border: solid #eee 1px;
+  padding: 12px 28px;
+  border-radius: 10px;
+}
+.article-entry>table th{
+  border-bottom: solid #eee 1px;
+}
+.article-entry>table td{
+  border-bottom: solid #eee 1px;
 }
 .article-entry code{
   font-family: Tahoma;
